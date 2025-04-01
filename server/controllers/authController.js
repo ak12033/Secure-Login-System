@@ -5,7 +5,6 @@ import transporter from '../config/nodemailer.js';
 import { EMAIL_VERIFY_TEMPLATE, PASSWORD_RESET_TEMPLATE} from '../config/emailTemplate.js';
 
 export const register = async (req, res) => {
-    console.log("hi")
     const {name, email, password} = req.body;
 
     if(!name || !email || !password){
